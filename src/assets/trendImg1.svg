@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <!-- Light Background -->
+  <rect width="900" height="500" fill="transparent" rx="12" ry="12"/>
+  
+  <!-- Subtle AI Background Elements -->
+  <defs>
+    <linearGradient id="aiWaveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#80BDFF" stop-opacity="0.05"/>
+      <stop offset="50%" stop-color="#0058FF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#80BDFF" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <!-- AI Wave Elements -->
+  <path d="M50,320 C150,340 250,290 350,320 C450,350 550,300 650,330 C750,360 850,310 950,340" 
+        fill="none" stroke="url(#aiWaveGradient)" stroke-width="40" stroke-linecap="round" opacity="0.4"/>
+  <path d="M50,280 C150,250 250,300 350,270 C450,240 550,290 650,260 C750,230 850,280 950,250" 
+        fill="none" stroke="url(#aiWaveGradient)" stroke-width="25" stroke-linecap="round" opacity="0.3"/>
+  <path d="M50,240 C150,270 250,220 350,250 C450,280 550,230 650,260 C750,290 850,240 950,270" 
+        fill="none" stroke="url(#aiWaveGradient)" stroke-width="15" stroke-linecap="round" opacity="0.2"/>
+  
+  <!-- Title -->
+  <text x="450" y="50" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#05164B" text-anchor="middle">Financial Performance Analysis</text>
+  <text x="450" y="75" font-family="Arial, sans-serif" font-size="16" fill="#0A2E8A" text-anchor="middle">Annual Revenue Trends with Smart Insights</text>
+  
+  <!-- Chart Grid Lines -->
+  <line x1="100" y1="400" x2="800" y2="400" stroke="#D5EFFF" stroke-width="1.5"/>
+  <line x1="100" y1="350" x2="800" y2="350" stroke="#D5EFFF" stroke-width="0.5" stroke-dasharray="4"/>
+  <line x1="100" y1="300" x2="800" y2="300" stroke="#D5EFFF" stroke-width="0.5" stroke-dasharray="4"/>
+  <line x1="100" y1="250" x2="800" y2="250" stroke="#D5EFFF" stroke-width="0.5" stroke-dasharray="4"/>
+  <line x1="100" y1="200" x2="800" y2="200" stroke="#D5EFFF" stroke-width="0.5" stroke-dasharray="4"/>
+  <line x1="100" y1="150" x2="800" y2="150" stroke="#D5EFFF" stroke-width="0.5" stroke-dasharray="4"/>
+  
+  <!-- X-Axis Labels (Months) -->
+  <text x="158" y="425" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="middle">Jan</text>
+  <text x="216" y="425" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="middle">Feb</text>
+  <text x="274" y="425" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="middle">Mar</text>
+  <text x="332" y="425" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="middle">Apr</text>
+  <text x="390" y="425" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="middle">May</text>
+  <text x="448" y="425" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="middle">Jun</text>
+  <text x="506" y="425" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="middle">Jul</text>
+  <text x="564" y="425" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="middle">Aug</text>
+  <text x="622" y="425" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="middle">Sep</text>
+  <text x="680" y="425" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="middle">Oct</text>
+  <text x="738" y="425" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="middle">Nov</text>
+  <text x="796" y="425" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="middle">Dec</text>
+  
+  <!-- Y-Axis Labels -->
+  <text x="90" y="400" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="end">0</text>
+  <text x="90" y="350" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="end">1M</text>
+  <text x="90" y="300" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="end">2M</text>
+  <text x="90" y="250" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="end">3M</text>
+  <text x="90" y="200" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="end">4M</text>
+  <text x="90" y="150" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="end">5M</text>
+
+  <!-- Graph Lines with Glow Effects -->
+  <defs>
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#55A0FF" /> <!-- Medium-Light Blue -->
+      <stop offset="100%" stop-color="#0058FF" /> <!-- Medium Blue -->
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Chart Line Shadow -->
+  <path d="M158,350 
+           C175,330 190,320 216,310 
+           S250,290 274,280 
+           S310,265 332,250 
+           S365,240 390,220 
+           S425,205 448,180 
+           S485,165 506,185 
+           S540,205 564,200 
+           S595,190 622,170 
+           S650,155 680,185 
+           S710,230 738,215 
+           S780,190 796,170" 
+        fill="none" stroke="url(#lineGradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.2" filter="url(#glow)"/>
+  
+  <!-- Chart Line -->
+  <path d="M158,350 
+           C175,330 190,320 216,310 
+           S250,290 274,280 
+           S310,265 332,250 
+           S365,240 390,220 
+           S425,205 448,180 
+           S485,165 506,185 
+           S540,205 564,200 
+           S595,190 622,170 
+           S650,155 680,185 
+           S710,230 738,215 
+           S780,190 796,170" 
+        fill="none" stroke="url(#lineGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Chart Data Points with AI connection effect -->
+  <circle cx="158" cy="350" r="5" fill="#55A0FF"/>
+  <circle cx="216" cy="310" r="5" fill="#55A0FF"/>
+  <circle cx="274" cy="280" r="5" fill="#55A0FF"/>
+  <circle cx="332" cy="250" r="5" fill="#55A0FF"/>
+  <circle cx="390" cy="220" r="5" fill="#55A0FF"/>
+  <circle cx="448" cy="180" r="5" fill="#0058FF"/>
+  <circle cx="506" cy="185" r="5" fill="#0058FF"/>
+  <circle cx="564" cy="200" r="5" fill="#0058FF"/>
+  <circle cx="622" cy="170" r="5" fill="#0058FF"/>
+  <circle cx="680" cy="185" r="5" fill="#55A0FF"/>
+  <circle cx="738" cy="215" r="5" fill="#55A0FF"/>
+  <circle cx="796" cy="170" r="5" fill="#55A0FF"/>
+  
+  <!-- Glowing connection lines -->
+  <line x1="158" y1="350" x2="216" y2="310" stroke="#55A0FF" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="216" y1="310" x2="274" y2="280" stroke="#55A0FF" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="274" y1="280" x2="332" y2="250" stroke="#55A0FF" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="332" y1="250" x2="390" y2="220" stroke="#55A0FF" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="390" y1="220" x2="448" y2="180" stroke="#0058FF" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="448" y1="180" x2="506" y2="185" stroke="#0058FF" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="506" y1="185" x2="564" y2="200" stroke="#0058FF" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="564" y1="200" x2="622" y2="170" stroke="#0058FF" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="622" y1="170" x2="680" y2="185" stroke="#55A0FF" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="680" y1="185" x2="738" y2="215" stroke="#55A0FF" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="738" y1="215" x2="796" y2="170" stroke="#55A0FF" stroke-width="1" stroke-opacity="0.3"/>
+  
+  <!-- Pulse Rings around important data points -->
+  <circle cx="448" cy="180" r="10" fill="none" stroke="#0058FF" stroke-width="1" opacity="0.6">
+    <animate attributeName="r" from="5" to="15" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="0.6" to="0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="622" cy="170" r="10" fill="none" stroke="#0058FF" stroke-width="1" opacity="0.6">
+    <animate attributeName="r" from="5" to="15" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="0.6" to="0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="796" cy="170" r="10" fill="none" stroke="#55A0FF" stroke-width="1" opacity="0.6">
+    <animate attributeName="r" from="5" to="15" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="0.6" to="0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Smart Annotations -->
+  <!-- Mid-Year Peak -->
+  <line x1="448" y1="180" x2="400" y2="130" stroke="#0058FF" stroke-width="1" stroke-dasharray="3"/>
+  <rect x="320" y="90" width="160" height="40" rx="20" ry="20" fill="white" stroke="#0058FF" stroke-width="1" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.1))"/>
+  <text x="400" y="110" font-family="Arial, sans-serif" font-size="11" fill="#0A44C5" text-anchor="middle">Sales spike due to summer</text>
+  <text x="400" y="122" font-family="Arial, sans-serif" font-size="11" fill="#0A44C5" text-anchor="middle">promotional campaign (+38%)</text>
+  
+  <!-- Q3 Insights -->
+  <line x1="622" y1="170" x2="622" y2="120" stroke="#0058FF" stroke-width="1" stroke-dasharray="3"/>
+  <rect x="542" y="80" width="160" height="40" rx="20" ry="20" fill="white" stroke="#0058FF" stroke-width="1" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.1))"/>
+  <text x="622" y="100" font-family="Arial, sans-serif" font-size="11" fill="#0A44C5" text-anchor="middle">Inventory drop post-discount</text>
+  <text x="622" y="112" font-family="Arial, sans-serif" font-size="11" fill="#0A44C5" text-anchor="middle">period (inventory -27%)</text>
+  
+  <!-- Year-End Projection -->
+  <line x1="796" y1="170" x2="820" y2="120" stroke="#55A0FF" stroke-width="1" stroke-dasharray="3"/>
+  <rect x="750" y="80" width="140" height="40" rx="20" ry="20" fill="white" stroke="#55A0FF" stroke-width="1" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.1))"/>
+  <text x="820" y="100" font-family="Arial, sans-serif" font-size="11" fill="#0A2E8A" text-anchor="middle">Revenue forecast exceeds</text>
+  <text x="820" y="112" font-family="Arial, sans-serif" font-size="11" fill="#0A2E8A" text-anchor="middle">annual target by 12%</text>
+  
+  <!-- Early Year Note -->
+  <line x1="274" y1="280" x2="230" y2="230" stroke="#55A0FF" stroke-width="1" stroke-dasharray="3"/>
+  <rect x="150" y="190" width="160" height="40" rx="20" ry="20" fill="white" stroke="#55A0FF" stroke-width="1" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.1))"/>
+  <text x="230" y="210" font-family="Arial, sans-serif" font-size="11" fill="#0A2E8A" text-anchor="middle">Recovery trend after</text>
+  <text x="230" y="222" font-family="Arial, sans-serif" font-size="11" fill="#0A2E8A" text-anchor="middle">holiday season (+15%)</text>
+  
+  <!-- Mid-Year Drop -->
+  <line x1="506" y1="185" x2="506" y2="235" stroke="#0058FF" stroke-width="1" stroke-dasharray="3"/>
+  <rect x="426" y="235" width="160" height="40" rx="20" ry="20" fill="white" stroke="#0058FF" stroke-width="1" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.1))"/>
+  <text x="506" y="255" font-family="Arial, sans-serif" font-size="11" fill="#0A44C5" text-anchor="middle">Temporary dip due to</text>
+  <text x="506" y="267" font-family="Arial, sans-serif" font-size="11" fill="#0A44C5" text-anchor="middle">warehouse transition (-8%)</text>
+  
+  <!-- AI-based Recommendation Badge -->
+  <rect x="75" y="110" width="200" height="60" rx="8" ry="8" fill="white" stroke="#D5EFFF" stroke-width="1" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.1))"/>
+  
+  <circle cx="100" cy="140" r="15" fill="#D5EFFF" stroke="#55A0FF" stroke-width="1"/>
+  <path d="M100,132 L100,148 M92,140 L108,140" stroke="#55A0FF" stroke-width="2"/>
+  
+  <text x="180" y="130" font-family="Arial, sans-serif" font-size="12" fill="#0A2E8A" text-anchor="middle">AI INSIGHT</text>
+  <text x="193" y="150" font-family="Arial, sans-serif" font-size="11" fill="#05164B" text-anchor="middle">Consider 16% larger seasonal</text>
+  <text x="195" y="162" font-family="Arial, sans-serif" font-size="11" fill="#05164B" text-anchor="middle">inventory for Q4 forecast</text>
+</svg>
