@@ -91,7 +91,7 @@ const ChatbotSection = () => {
         transition={{ duration: 0.8 }}
       >
         <motion.div
-          className="max-w-5xl mx-auto bg-gradient-to-r from-sky-500 to-teal-500 rounded-3xl overflow-hidden relative"
+          className="max-w-5xl mx-auto bg-gradient-to-r from-sky-500 to-blue-500 rounded-3xl overflow-hidden relative"
           whileHover={{
             scale: 1.02,
             rotateX: 2,
